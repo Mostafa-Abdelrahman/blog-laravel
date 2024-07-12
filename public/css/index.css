@@ -1,0 +1,90 @@
+
+
+.post-header {
+    padding: 20px;
+    background-color: #212529;
+    /* border-bottom: 1px solid #3a3b3c; */
+    color: #ffffff;
+
+}
+
+.post-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-name {
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.post-date {
+    display: flex;
+    align-items: center;
+}
+
+.post-date::before {
+    content: "\1F4C5"; /* Unicode for calendar emoji */
+    margin-right: 5px;
+}
+
+.post-description {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.show-btn {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.show-btn:hover {
+    background-color: #0056b3;
+}
+
+.edit-btn {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
