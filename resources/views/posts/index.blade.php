@@ -15,7 +15,7 @@
                             {{-- src="{{ $post['image'] }}" --}}
                             <img  src="https://via.placeholder.com/50" alt="Author" class="author-image"> 
                             <span class="author-name">@ {{ $post['author'] }}</span>
-                            <span class="post-date">{{ $post['updated_at'] }}</span>
+                            <span class="post-date">{{ $post->updated_at->toFormattedDateString();}}</span>
                         </div>
                         <p class="post-description">
                             {{ $post['description'] }}
