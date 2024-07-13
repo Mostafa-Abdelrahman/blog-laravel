@@ -46,7 +46,7 @@
                     <nav class="nav">
                         <a class="nav-link active" href="{{ route('posts.index') }}"> All posts</a>
                         <a class="nav-link" href="{{ route('posts.create') }}">Create Post</a>
-                        <a class="nav-link" href="{{ route('posts.index') }}">Archive</a>
+                        <a class="nav-link" href="{{ route('posts.archive') }}">Archive</a>
                     </nav>
                 </div>
             </div>

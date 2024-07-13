@@ -21,12 +21,15 @@
                             {{ $post['description'] }}
                         </p>
                         <div class="button-group">
-                            <a href="{{route('posts.show',$post['id'])}}" class="btn show-btn">View</a>
-                            <a href="{{ route('posts.edit',$post['id']) }}" class="btn edit-btn">Edit</a>
-                            <form style="display: inline;" action="{{ route('posts.delete',$post['id']) }}" method="POST">
+                            <form style="display: inline;" action="{{ route('posts.restore',$post['id']) }}" method="POST">
                                 @csrf
                                 @method('PUT')
-                            <button type="submit" class="btn delete-btn" onclick=" return confirm('Are you sure you want to delete ?'); ">Delete</button>
+                            <button type="submit" class="btn show-btn">Restore</button>
+                            </form>
+                            <form style="display: inline;" action="{{ route('posts.destroy',$post['id']) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                            <button type="submit" class="btn delete-btn">Destroy</button>
                             </form>
                         </div>
                     </div>

@@ -66,3 +66,13 @@ textarea {
     width: 100%;
     text-align: center;
 }
+
+.back-btn {
+    color: #007bff;
+    background-color: #282d31 ;
+}
+
+.back-btn:hover {
+    background-color: #393457;
+    color: #e2e2e2;
+}

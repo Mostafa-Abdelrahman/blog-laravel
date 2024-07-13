@@ -42,10 +42,6 @@
                 <input type="text" id="author" name="author" required>
             </div>
             <div class="form-group">
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-            </div>
-            <div class="form-group">
                 <label for="description">Description:</label>
                 <textarea id="description" name="description" rows="2" required></textarea>
             </div>
@@ -53,12 +49,15 @@
                 <label for="content">Content:</label>
                 <textarea id="content" name="content" rows="10" required></textarea>
             </div>
-            <div class="form-group">
+            {{-- <div class="form-group">
                 <label for="image">Image:</label>
                 <input type="file" id="image" name="image" accept="image/*">
-            </div>
+            </div> --}}
             <div class="form-group">
                 <button type="submit" class="btn submit-btn">Submit</button>
+            </div>
+            <div class="button-group">
+                <a class="btn back-btn" href="{{ route('posts.index') }}">Back</a>
             </div>
         </form>
     </div>
